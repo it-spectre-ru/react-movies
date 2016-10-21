@@ -11,29 +11,29 @@ function importData() {
     let idCounter = 1;
     for (let input of inputList) {
         let action = axios.get(`http://www.omdbapi.com/?i=${input.id}&plot=short&r=json`)
-            .then((response) => {
-                let resultItem = getResultItem(response.data, idCounter++, input.id);
+          .then((response) => {
+              let resultItem = getResultItem(response.data, idCounter++, input.id);
 
-                result.push(resultItem);
-            });
+              result.push(resultItem);
+          });
 
         actions.push(action);
     }
 
     Promise.all(actions)
-        .then(() => {
-            let db = {
-                movies: result
-            };
+      .then(() => {
+          let db = {
+              movies: result
+          };
 
-            return Promise.promisify(jsonfile.writeFile)('./importer/db.json', db);
-        })
-        .then(() => {
-            console.log('Imported')
-        })
-        .catch((err) => {
-            console.log(err);
-        });
+          return Promise.promisify(jsonfile.writeFile)('./importer/db.json', db);
+      })
+      .then(() => {
+          console.log('Imported')
+      })
+      .catch((err) => {
+          console.log(err);
+      });
 }
 
 function getResultItem(data, resultId, inputId) {
@@ -46,7 +46,8 @@ function getResultItem(data, resultId, inputId) {
             genres: data.Genre.split(', '),
             director: data.Director,
             actors: data.Actors,
-            plot: data.Plot
+            plot: data.Plot,
+            posterUrl: data.Poster
         };
 
         return item;
