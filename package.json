@@ -1,29 +1,19 @@
 {
-  "name": "movies-list",
-  "version": "0.1.0",
+  "name": "importer",
+  "version": "1.0.0",
+  "description": "",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "0.6.1"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1",
-    "react": "^15.3.2",
-    "react-autobind": "^1.0.6",
-    "react-bootstrap": "^0.30.5",
-    "react-dom": "^15.3.2",
-    "toastr": "^2.1.2"
-  },
-  "proxy": "http://localhost:4000",
   "scripts": {
-    "server": "json-server --watch db.json --port 4000",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "bluebird": "^3.4.6",
+    "fast-csv": "^2.3.0",
+    "jsonfile": "^2.4.0",
+    "lodash": "^4.16.4"
+  }
 }
