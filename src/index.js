@@ -8,6 +8,6 @@ import '../node_modules/react-select/dist/react-select.css';
 
 
 ReactDOM.render(
-	<App />,
-	document.getElementById('root')
+  <App />,
+  document.getElementById('root')
 );
