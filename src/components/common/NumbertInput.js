@@ -27,7 +27,7 @@ NumberInput.propTypes = {
 	name: React.PropTypes.string.isRequired,
 	label: React.PropTypes.string.isRequired,
 	onChange: React.PropTypes.func.isRequired,
-	value: React.PropTypes.string,
+	value: React.PropTypes.number,
 	error: React.PropTypes.string
 };
 
