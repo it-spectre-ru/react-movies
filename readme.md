@@ -60,3 +60,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `npm run server`
 
 Starts json-server from db.json file on port 4000
+
+
+
+#### Получить помощь
+https://github.com/it-spectre-ru/react-movies/pulls - Ваши пожелания и замечания к проекту.
+
+
+#### Смотрите также
+* [Лицензия](./license.md)
+
+
