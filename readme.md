@@ -64,7 +64,7 @@ Starts json-server from db.json file on port 4000
 
 
 #### Получить помощь
-[Ваши пожелания и замечания к проекту](https://github.com/it-spectre-ru/react-movies/pulls)
+* [Ваши пожелания и замечания к проекту](https://github.com/it-spectre-ru/react-movies/pulls)
 
 
 #### Смотрите также
